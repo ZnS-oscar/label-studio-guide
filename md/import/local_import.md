@@ -17,4 +17,14 @@ LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT=D:\\pcbobb
 # 2. 将本地数据加入到Label Studio当中
 1. 在网络浏览器中打开 Label Studio。
 2. 点击一个项目,点击右上角Setting
-3. 单击添加源存储。
+3. 点击 Cloud Storage
+4. 点击 Add Source Storage
+5. 在弹出的新窗口当中 Storage Type一栏下拉,选择Local files,表明我们是从本地导入数据
+6. 填写 Absolute local path, 要求填写图片所在的绝对路径, 请注意要是根路径下的路径. 可以使用mylink建立链接, 将其他路径的文件夹添加到此路径当中. 例如, 我希望将E:\\cloth_img当中的图片也加入到数据库当中, 那么我可以使用以下命令
+```ssh
+mylink \d D:\\pcbobb\\cloth_img E:\\cloth_img
+```
+则在D:\\pcbobb下创建了一个E:\\cloth_img的mylink快捷方式,可以使用 D:\\pcbobb\\cloth_img这一路径将数据导入到label studio当中.
+7. 选择Treat every bucket object as a source file 为打开状态, 这一步很重要,不然导入的图片无法显示.
+![alt text](image-1.png)
+8.点击 Add storage. 数据已经被导入了.
