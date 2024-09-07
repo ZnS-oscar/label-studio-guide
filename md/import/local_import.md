@@ -10,7 +10,7 @@ LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED=true
 LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT=D:\\pcbobb
 # windows的地址尽量使用双反斜杠
 ```
-![alt text](image.png)
+![alt text](md\import\image.png)
 
 其中LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT设置了你的数据的根路径. Label Studio会到这个根文件下寻找数据. 用户将需要标注的数据放在这个根文件夹或者根文件夹之下的文件夹.在上面的例子当中, 我的图片则必须存放在D:\\pcbobb之下, 不过我可以放在子文件夹D:\\pcbobb\\image当中,不必直接放在根路径下. 
 
@@ -26,5 +26,5 @@ mylink \d D:\\pcbobb\\cloth_img E:\\cloth_img
 ```
 则在D:\\pcbobb下创建了一个E:\\cloth_img的mylink快捷方式,可以使用 D:\\pcbobb\\cloth_img这一路径将数据导入到label studio当中.
 7. 选择Treat every bucket object as a source file 为打开状态, 这一步很重要,不然导入的图片无法显示.
-![alt text](image-1.png)
+![alt text](md\import\image-1.png)
 8.点击 Add storage. 数据已经被导入了.
